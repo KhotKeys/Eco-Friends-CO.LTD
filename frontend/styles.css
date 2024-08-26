@@ -1,0 +1,315 @@
+.logo2-image {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo2-image img {
+  display: block;
+  height: 50px;
+  width: 50px;
+}
+
+.content {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-row {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-row > h2 > p > img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .card22{
+    color:rgb(2, 155, 35);
+    font-size: 20px;
+}
+@media (max-width: 768px) {
+    .card22 {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card22 {
+      font-size: 12px;
+    }
+  }
+  .dairy {
+    font-size: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .dairy {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dairy {
+      font-size: 11px;
+    }
+  }
+
+  .border {
+    max-width: 100%;
+    margin-top: 10px;
+    height: 30rem;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out; /* add transition effect */
+    overflow: hidden; /* add overflow hidden to enable sliding effect */
+  }
+  
+  .border2 {
+    max-width: 100%;
+    margin-top: 10px;
+    height: 50rem;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out; /* add transition effect */
+    overflow: hidden; /* add overflow hidden to enable sliding effect */
+  }
+  
+  /* add animation effect on hover */
+  .border:hover {
+    transform: scale(1.1); /* scale up on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add box shadow on hover */
+  }
+  
+  .border2:hover {
+    transform: scale(1.1); /* scale up on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add box shadow on hover */
+  }
+  
+  /* add sliding effect on hover */
+  .border:hover .slide {
+    transform: translateX(0); /* slide in on hover */
+  }
+  
+  .border2:hover .slide {
+    transform: translateX(0); /* slide in on hover */
+  }
+  
+  /* add sliding effect to text and images */
+  .slide {
+    transform: translateX(-100%); /* slide out initially */
+    transition: all 0.3s ease-in-out; /* add transition effect */
+  }
+  
+  /* responsiveness */
+  @media (max-width: 768px) {
+    .border {
+      max-width: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .border {
+      max-width: 250px;
+    }
+  }
+
+
+
+
+/* image of the Andrew */
+
+
+  .image-container-2023 {
+    perspective: 1000px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .image-2023 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .image-2023 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image-back-2023 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+  }
+  
+  .image-back-2023 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image-2023.flipped {
+    transform: rotateY(180deg);
+  }
+
+
+/* flow */
+
+ .image-flow-container {
+   overflow-x: auto;
+   white-space: nowrap;
+   text-align: center;
+ }
+ 
+ .image-flow {
+   display: inline-block;
+   text-align: left;
+ }
+ 
+ .image-card {
+   position: relative;
+   margin-right: 20px;
+   width: 200px;
+   height: 200px;
+   border-radius: 10px;
+   overflow: hidden;
+   cursor: pointer;
+   display: inline-block;
+   border: 3px solid #ccc;
+ }
+ 
+ .image-card img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: transform 0.5s;
+ }
+ 
+ .image-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   color: #fff;
+   font-size: 24px;
+   text-align: center;
+   padding-top: 50%;
+   opacity: 0;
+   transition: opacity 0.5s;
+ }
+ 
+ .image-card:hover .image-overlay {
+   opacity: 1;
+ }
+ 
+ .image-card:hover img {
+   transform: scale(1.1);
+ }
+ 
+ /* Add animation to make images move from right to left */
+ .image-flow {
+   animation: move-left 40s infinite;
+ }
+ 
+ @keyframes move-left {
+   0% {
+     transform: translateX(100%);
+   }
+   100% {
+     transform: translateX(-100%);
+   }
+ }
+
+
+
+
+
+
+
+/* Video Section Styles */
+
+#video-section {
+  padding: 100px 0;
+  background-color: #f7f7f7;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  border: green solid 4px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 214, 129, 0.1);
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.item-align {
+  align-items: center;
+  text-align: center;
+  animation: slide-in 4s;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Styles */
+
+@media only screen and (max-width: 768px) {
+  #video-section {
+    padding: 50px 0;
+  }
+  .video-container {
+    padding-bottom: 50%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #video-section {
+    padding: 20px 0;
+  }
+  .video-container {
+    padding-bottom: 30%;
+  }
+}
+
+
+
+
+
+
+

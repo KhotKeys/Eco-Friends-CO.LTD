@@ -1,0 +1,126 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-image: linear-gradient(rgba(4, 101, 22, 0.8), rgba(5, 44, 12, 0.8)), url(./dashboard/images/back-footer-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+.newsletter-btn {
+    background-color: #5b8f42;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.newsletter-btn:hover {
+    background-color: #79a65f;
+}
+
+.logo img {
+    width: 100px;
+}
+
+address, p {
+    margin: 10px 0;
+}
+
+.social-links a img {
+    width: 24px;
+    margin: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    border-top: 1px solid #5b8f42;
+    padding-top: 20px;
+}
+
+.footer-bottom a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .social-links {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-container {
+        padding: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+    }
+}
