@@ -1,6 +1,6 @@
-# Smart Waste Management System
+#Eco Friends CO.LTD
 
-# TrashWell
+# Waste Management
 
 
 # Link to the slide
@@ -27,8 +27,7 @@
 - [Contributor](#contributor)
 
 ## Overview
-
-TrashWell the Smart Waste Management System  is an innovative web application designed to streamline waste management processes for households, waste collection services, and administrators. The system aims to enhance waste collection efficiency, promote recycling efforts, and provide insights into environmental impact metrics.
+ECO FRIENDS CO. LTD Is a South Sudanese indigenous company that deals in General Cleanliness and Landscaping Services. The company is a business solutions company endowed with efficiency and effectiveness that provides a wide range of cleaning services and Environmental awareness to clients/companies/institutions and other sectors that are interested in quality cleaning, landscaping, and maintenance services including consultation services. Since its establishment in 2020, the company has been on its feet trying to do its level to see a quality and healthy environment for the people of South Sudan; Therefore, we are appreciative of this opportunity to present ourselves to your esteemed consideration. The company is fully registered and operational in the above-mentioned office in Juba.
 
 ## Features
 
@@ -48,8 +47,8 @@ Ensure you have the following before starting:
 Clone the repository:
 
 ```bash
-git clone https://github.com/Lydia02/SmartWasteManagementSystem.git
-cd SmartWasteManagementSystem
+git clone https://github.com/KhotKeys/Eco-Friends-CO.LTD.git
+cd Eco-Friends-CO.LTD
 ```
 
 Install the dependencies:
@@ -173,9 +172,9 @@ describe('User Authentication', () => {
     const res = await request(app)
       .post('/api/auth/signup')
       .send({
-        firstname: 'Lydia',
-        lastname: 'Ojoawo',
-        email: 'Lydia@example.com',
+        firstname: 'Khot',
+        lastname: 'Gabriel',
+        email: 'khotgabriel@example.com',
         password: 'secret123',
         address: '123 Main St'
       });
@@ -187,7 +186,7 @@ describe('User Authentication', () => {
     const res = await request(app)
       .post('/api/auth/login')
       .send({
-        email: 'Lydia@example.com',
+        email: 'khotgabriel@example.com',
         password: 'secret123'
       });
     expect(res.statusCode).toBe(200);
@@ -198,7 +197,7 @@ describe('User Authentication', () => {
     const res = await request(app)
       .post('/api/auth/login')
       .send({
-        email: 'Lydia@example.com',
+        email: 'khotgabriel@example.com',
         password: 'wrongpassword'
       });
     expect(res.statusCode).toBe(400);
@@ -220,15 +219,6 @@ Contributions are welcome. Please fork the repository, create a feature branch, 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
 
 ## Contributor
-
-- **Lydia Ojoawo** - [GitHub Profile](https://github.com/Lydia02)
-
-- **Damilare Azeez** - [GitHub Profile](https://github.com/dazeez1)
-
-- **Nduka Oluchi** - [GitHub Profile](https://github.com/Lisky-pixel)
-
-- **Marvelous Nelson** - [GitHub Profile](https://github.com/mnelson-1)
-
 - **Gabriel** - [GitHub Profile](https://github.com/KhotKeys)
 
 ## Live Applications
